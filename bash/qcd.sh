@@ -6,8 +6,9 @@
 # Purpose: To navigate to calc directory directly by using find information
 # Usage  : source qcd.sh k5N5vndz
 
-LOCAL_RUN='~/src/radiasoft/sirepo/run/'
-GLOBAL_RUN='/var/db/sirepo/'
+LOCAL_RUN="$HOME/src/radiasoft/sirepo/run/"
+GLOBAL_RUN="/var/db/sirepo/"
+
 if [ -d "$LOCAL_RUN" ]; then
     run_dir=$LOCAL_RUN
 elif [ -d "$GLOBAL_RUN" ]; then
