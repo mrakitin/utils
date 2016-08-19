@@ -14,7 +14,7 @@ elif [ -d "$GLOBAL_RUN" ]; then
     run_dir=$GLOBAL_RUN
 else
     echo "Neither $LOCAL_RUN, nor $GLOBAL_RUN exist. Exit"
-    exit 1
+    # exit 1
 fi
 
 if [ ! -z "$1" ]; then
