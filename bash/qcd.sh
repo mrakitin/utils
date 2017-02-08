@@ -7,9 +7,12 @@
 # Usage  : source qcd.sh k5N5vndz
 
 LOCAL_RUN="$HOME/src/radiasoft/sirepo/run/"
+LOCAL_RUN2="/vagrant/sirepo/run/"
 GLOBAL_RUN="/var/db/sirepo/"
 
-if [ -d "$LOCAL_RUN" ]; then
+if [ -d "$LOCAL_RUN2" ]; then
+    run_dir=$LOCAL_RUN2
+elif [ -d "$LOCAL_RUN" ]; then
     run_dir=$LOCAL_RUN
 elif [ -d "$GLOBAL_RUN" ]; then
     run_dir=$GLOBAL_RUN
