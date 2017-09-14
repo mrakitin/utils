@@ -2,7 +2,7 @@
 
 pattern='<option name="x" value="'
 new_value="${pattern}0\" />"
-search_file='.idea/workspace_tmp.xml'
+search_file='.idea/workspace.xml'
 
 if [ ! -f "$search_file" ]; then
     echo "File '${search_file}' does not exist."
